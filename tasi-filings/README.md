@@ -77,7 +77,7 @@ without `My Drive` are rejected.
 
 ```bash
 cd tasi-filings
-uv run python test_tasi_filings.py
+uv run test_tasi_filings.py
 ```
 
 Always checks that all 10 tools are registered. With extracts for `1150` / `2026 Q3` under

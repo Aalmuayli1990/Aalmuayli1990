@@ -10,4 +10,4 @@ jobs:
       - uses: astral-sh/setup-uv@v5
       - name: MCP client smoke test (no Safari, no local extracts)
         working-directory: tasi-filings
-        run: uv run python test_tasi_filings.py
+        run: uv run test_tasi_filings.py
