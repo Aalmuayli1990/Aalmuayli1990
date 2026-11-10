@@ -1,7 +1,9 @@
-name: ci
+name: tasi-filings-ci
 on:
   push:
+    paths: ["tasi-filings/**", ".github/workflows/tasi-filings-ci.yml"]
   pull_request:
+    paths: ["tasi-filings/**", ".github/workflows/tasi-filings-ci.yml"]
 jobs:
   smoke:
     runs-on: ubuntu-latest
