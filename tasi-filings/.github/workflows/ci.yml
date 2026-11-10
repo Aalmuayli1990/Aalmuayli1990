@@ -1,0 +1,13 @@
+name: ci
+on:
+  push:
+  pull_request:
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - name: MCP client smoke test (no Safari, no local extracts)
+        working-directory: tasi-filings
+        run: uv run python test_tasi_filings.py
